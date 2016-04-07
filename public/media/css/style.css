@@ -1,0 +1,298 @@
+/** {
+margin:0;
+paading:0;
+}*/
+.container {
+width: 955px;
+margin:0 auto;
+}
+body {
+font-family:"Lobster";
+font-size: 18px;
+}
+.wrapper {
+background:url("../img/midcurves.png") repeat-x 50% 650px,
+    url("../img/bg1.jpg") repeat-x center top;
+}
+.middle{
+background:linear-gradient(to top,#78442f, #623726);
+padding-top:  45px;
+
+}
+
+#header {
+background:url("../img/topcurves.png") center top repeat-x;
+    
+height:200px;
+margin-bottom: 20px;
+}
+#header img {
+float:left;
+height:80%;
+}
+#logotext {
+
+float:right;
+color:#c9030c;
+
+text-shadow: 1px 1px 3px black;
+font-size:30px;
+padding: 4px 10px;
+}
+
+.topmenu {
+display:inline-flex;
+width:100%;
+margin:0 auto;
+float: right;
+}
+.topmenu a {
+flex:1;
+display:block;
+padding:10px 0;
+text-align:center;
+color:#94674e;
+text-decoration:none;
+    font-size: 26px;
+/* background: rgba(255,255,255,0.5);
+ border-right: solid 1px rgba(148,103,78, 0.5); */  
+}
+.topmenu a:hover {
+background:rgba(255,204,204, 0.5);
+
+}
+@media screen and (max-width:600px){
+.topmenu {
+flex-direction:column;
+}
+}
+#footer {
+padding:15px 20px;
+text-align:center;
+background:#ffcaca;
+
+}
+.mainimg{
+height: 402px;
+width: 950px;
+margin:0 auto;
+background: url("../img/bg2.jpg") no-repeat 50% 50%;
+}
+.mainimg article {
+width:440px;
+height:230px;
+background: rgba( 231, 222, 192, 0.65); 
+position:relative;
+top:20px;
+left:20px;
+text-align: justify;
+padding: 15px;
+    font-size: 18px;
+ }
+
+.mainimg article h1{
+color:#c9030c;
+    font-size: 43px;
+
+
+}
+.mainimg{
+margin-bottom: 33px;
+}
+.mainimg a{
+background-color:#94604c;
+border-color:#793e28;
+    font-family: "Arial";
+    font-size: 18px;
+}
+.mainimg a:hover{
+
+background-color:#793e28;
+
+}
+.curves {
+height: 60px;
+vertical-align: middle;
+padding-top: 20px;
+text-align: center;
+color:#ed1d38; 
+
+font-size: 26px;
+
+}
+.middle .container {
+
+
+
+}
+.cont-cake{
+padding: 0px;
+ width:935px;
+
+}
+.cake {
+padding:0px;
+}
+
+
+.cake:nth-child(1) {
+padding-right: 31px;
+}
+.cake:nth-child(2) {
+padding: 0px 15px;
+}
+.cake:nth-child(3) {
+padding-left: 31px;
+}
+.content2 article {
+
+margin:0 auto;
+text-align: center;
+}
+.blockimg {
+
+height: 15px;
+  
+}
+.lefttop {
+height: 15px;
+background: url("../img/lefttop.png") left top no-repeat;
+    float: left;
+    width:20px;
+}
+.centertop {
+
+background: url("../img/centertop.png") center top repeat-x;
+  display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+  
+
+}
+.centerbottom {
+background: url("../img/centerbottom.png") center bottom repeat-x;
+  display: block; 
+ margin-left:20px;
+ margin-right:20px;
+
+}
+.righttop {
+height: 15px;
+background: url("../img/righttop.png") right top no-repeat;
+float: right;
+width:20px;
+}
+.left2{
+float:left;
+width:20px;
+background: url("../img/left2.png") repeat-y;
+
+   
+
+}
+.leftmenu {
+margin-top: 20px;
+   
+}
+
+.leftmenu a{
+
+background-color:#94604c;
+    border-color:#793e28;
+}
+.leftmenu a:hover{
+
+background-color:#793e28;
+
+
+}
+.content3 table {
+margin-top: 20px;
+}
+.tel {
+    
+height: 100px;
+width:300px;
+color: white;
+border-color: white;
+}
+.text {
+display: block;
+height: 100px;
+width: 200px;
+border: 2px solid white;
+}
+
+.knopka {
+display: none;
+background-color: bisque;
+text-align: center;
+ height: 100px;
+width: 200px; 
+padding-top: 20px;    
+}
+
+@font-face {
+
+font-family:"Lobster";
+    src: url("Lobster14.otf");
+}
+
+.task {
+background: url("../img/lefttop.png") left top no-repeat,
+    url("../img/righttop.png") right top no-repeat,
+    url("../img/bottom-angle-left.png") left bottom no-repeat,
+ url("../img/bottom-angle-right.png") right bottom no-repeat;
+    
+    
+}
+
+.blockimg-mid {
+padding: 0px 10px;
+background: url("../img/left2.png") left top repeat-y,
+            url("../img/right2.png") right top repeat-y;
+background-color: #f6dbac;
+}
+
+.lenta {
+position:relative;
+left:-35px;
+    top:0px;
+    z-index: 1;
+   
+}
+
+.lenta-nadpis {
+ color: #f6dbac;
+position:absolute;
+z-index: 10;
+     top:20px;
+    left:20px;
+}
+.imagecake {
+position:absolute;
+z-index: 10;
+     top:-15px;
+    left:200px;
+}
+
+
+.call {
+border:2px solid grey;
+text-decoration: none;
+padding:10px 20px;
+    background-color: white;
+}
+
+.call:hover{
+
+text-decoration: none;
+}
+.obratnsvyaz {
+display:none;
+position: absolute;
+left:20px;
+top:-40px;
+background-color: #f6dbac;
+
+}

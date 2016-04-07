@@ -1,5 +1,58 @@
 extends layout
-
 block content
-  h1= title
-  p Welcome to #{title}
+ .container.cont-cake
+   row.content2
+     .col-md-4.cake
+       article.task
+         .blockimg.centertop
+         .blockimg-mid
+           img.lenta(src='media/img/lenta.png')
+           span.lenta-nadpis Deliciousness 
+           img.imagecake(src='media/img/cake1.png')
+           |                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+         .blockimg.centerbottom
+     .col-md-4.cake
+       article.task
+         .blockimg.centertop
+         .blockimg-mid
+           img.lenta(src='media/img/lenta.png')
+           span.lenta-nadpis Deliciousness 
+           img.imagecake(src='media/img/cake1.png')
+           |                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+         .blockimg.centerbottom
+     .col-md-4.cake
+       article.task
+         .blockimg.centertop
+         .blockimg-mid
+           img.lenta(src='media/img/lenta.png')
+           span.lenta-nadpis Deliciousness 
+           img.imagecake(src='media/img/cake1.png')
+           |                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+         .blockimg.centerbottom
+ .container
+   row.content3
+     .col-md-2.leftmenu
+       a.btn.btn-success.btn-block(href='#', data-title='<h1>Welcome</h1>', data-body='<br> Lorem ipsum dolor sit amet,') Home
+       a.btn.btn-success.btn-block(href='#', data-title='<h1>Our candy</h1>', data-body='Lorem ipsum dolor sit amet,') Our candy
+       a.btn.btn-success.btn-block(href='#', data-title='Our story', data-body='ipsum dolor sit amet,') Our story
+     .col-md-7
+       br
+       .block-tel
+         .text
+           | телефон
+         .knopka
+           a.call(href='#') Call
+         section.tel
+       form#obratnsvyaz.obratnsvyaz(method='post')
+         input.close-btn(type='image', src='media/img/close_button.png', value='закрыть', onclick="document.getElementById('obratnsvyaz').style.display='none'")
+         fieldset
+           legend
+             h2 Оставьте ваш телефон и мы перезвоним вам
+           .form-group
+             label(for='name') Введите ваше имя:
+             input.form-control(type='text', name='name')
+           .form-group
+             label(for='tel')  Введите ваш телефон:
+             input.form-control(type='tel', name='tel')
+           button.btn(type='submit') Отправить
+     .col-md-3

@@ -1,11 +1,45 @@
 doctype html
 html
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(charset='utf8')
+    title
+    meta(name='description', content='')
+    meta(name='keywords', content='')
+    link(href='media/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+    link(href='media/css/style.css', rel='stylesheet')
+    script(src='media/js/jquery.min.js')
+    script(src='media/js/my.js')
   body
-    div.menu
-      a(href="/") Главная
-      a(href="/contact") Контакты
-      a(href="/news") Новости
-    block content
+    .wrapper
+      header#header
+        img(src='media/img/logo.png')
+        // <h1 id='logotext'>Candilicious</h1>
+        nav.topmenu
+          a(href='#', data-url='media/img/polos.jpg') Home
+          a(href='#', data-url='media/img/polos2.jpg') Our candy
+          a(href='#') Our story
+          a(href='#') Candy shop
+          a(href='#') Contact
+          a(href='#') Blog
+      .container
+        section.mainimg
+          article
+            h1  Loremipsum dolor
+            |           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus  
+            br
+            a.btn.btn-success.btn-small(href='#') Push me
+        section.curves
+          p Candilicious Offers the Finest Baked Treats and Candy Anywhere in the World
+    .middle
+      block content
+    // <br style="clear:both">
+    footer#footer
+      a(href='#', target='blank')  Грицук
+      | &copy 2016 Candilicious
+      nav
+        a(href='#', data-url='media/img/polos.jpg') Home
+        a(href='#', data-url='media/img/polos2.jpg') Our candy
+        a(href='#') Our story
+        a(href='#') Candy shop
+        a(href='#') Contact
+        a(href='#') Blog
