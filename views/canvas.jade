@@ -1,0 +1,9 @@
+extends layout
+block styles
+ link(href='media/css/stylecanvas.css', rel='stylesheet')
+block scripts
+ script(src='media/js/canvas-api.js')
+block content
+ h2 наше творчество 
+ section#canvasbox
+  canvas#canvas(width='500', height='300')

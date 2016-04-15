@@ -9,6 +9,7 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var video=require('./routes/video');
 var anketa=require('./routes/anketa');
+var canvas=require('./routes/canvas');
 
 var app = express();
 
@@ -28,6 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/users', users);
 app.use('/video',video);
 app.use('/anketa',anketa);
+app.use('/canvas',canvas);
 app.use('/', routes);
 app.use('/:id', routes);
 // catch 404 and forward to error handler
