@@ -10,6 +10,7 @@ var users = require('./routes/users');
 var video=require('./routes/video');
 var anketa=require('./routes/anketa');
 var canvas=require('./routes/canvas');
+var drop=require('./routes/drop');
 
 var app = express();
 
@@ -30,6 +31,7 @@ app.use('/users', users);
 app.use('/video',video);
 app.use('/anketa',anketa);
 app.use('/canvas',canvas);
+app.use('/drop',drop);
 app.use('/', routes);
 app.use('/:id', routes);
 // catch 404 and forward to error handler

@@ -60,16 +60,23 @@ canvas.lineTo(500,f);
 canvas.closePath();
 canvas.stroke();
 canvas.restore();
-
+canvas.save();
 canvas.font='bold 24px verdana';
 canvas.textAlign='start';
 canvas.fillText('My Message', 100,100);
 canvas.rotate(Math.PI/180*45);
 var text='Measure Text';
 var size=canvas.measureText(text);
-
+canvas.restore();
+canvas.save();
 canvas.fillText(text,250,124);
 canvas.strokeRect(250,100,size.width,24);
 
 
+
+var img=document.createElement('img');
+img.setAttribute('src','/media/img/image.jpg');
+img.addEventListener('load',function(){
+canvas.drawImage(img,20,20,80,80);
+});
 }
