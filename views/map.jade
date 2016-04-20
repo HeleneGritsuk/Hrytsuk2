@@ -1,0 +1,8 @@
+extends layout
+block styles
+ link(href='media/css/map.css', rel='stylesheet')
+block scripts
+ script(src='media/js/map-api.js')
+block content
+ section#location
+  input#getLocation(type='button', value='Где я?')
