@@ -43,7 +43,7 @@ var src=document.getElementById(id).src;
 
 posx=e.pageX-drop.offsetLeft;
 posy=e.pageY-drop.offsetTop;
-//canvas.drawImage(img,posx,posy);
+
 
 
 var img=document.createElement('img');
