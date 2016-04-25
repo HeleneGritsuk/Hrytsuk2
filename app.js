@@ -13,6 +13,7 @@ var canvas=require('./routes/canvas');
 var drop=require('./routes/drop');
 var map=require('./routes/map');
 var storage=require('./routes/storage');
+var config=require('./config');
 
 var app = express();
 
@@ -69,5 +70,6 @@ app.use(function(err, req, res, next) {
   });
 });
 
-app.listen(8129);
+//app.listen(8129);
+app.listen(config.get('port'));
 module.exports = app;

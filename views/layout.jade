@@ -8,6 +8,7 @@ html
     link(href='media/bootstrap/css/bootstrap.min.css', rel='stylesheet')
     link(href='media/css/style.css', rel='stylesheet')
     script(src='media/js/jquery.min.js')
+    script(src='media/bootstrap/js/bootstrap.min.js')
     script(src='media/js/my.js')
     block styles
     block scripts
@@ -24,12 +25,36 @@ html
           a(href='#') Contact
           a(href='#') Blog
       .container
-        section.mainimg
-          article
-            h1  Loremipsum dolor
-            |           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus  
-            br
-            a.btn.btn-success.btn-small(href='#') Push me
+        #carousel-example-generic.carousel.slide(data-ride='carousel')
+          // Indicators
+          ol.carousel-indicators
+            li.active(data-target='#carousel-example-generic', data-slide-to='0')
+            li(data-target='#carousel-example-generic', data-slide-to='1')
+            li(data-target='#carousel-example-generic', data-slide-to='2')
+          // Wrapper for slides
+          .carousel-inner(role='listbox')
+            .item.active
+              img(src='media/img/bg2.jpg', alt='')
+              .carousel-caption
+                h1  Loremipsum dolor
+                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+            .item
+              img(src='media/img/slider2.jpg', alt='')
+              .carousel-caption
+                h1  Loremipsum dolor
+                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+            .item
+              img(src='media/img/slider3.jpg', alt='')
+              .carousel-caption
+                h1  Loremipsum dolor
+                p Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+          // Controls
+          a.left.carousel-control(href='#carousel-example-generic', role='button', data-slide='prev')
+            span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+            span.sr-only Previous
+          a.right.carousel-control(href='#carousel-example-generic', role='button', data-slide='next')
+            span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+            span.sr-only Next
         section.curves
           p Candilicious Offers the Finest Baked Treats and Candy Anywhere in the World
     .middle
