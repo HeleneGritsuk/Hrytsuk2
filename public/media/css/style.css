@@ -6,8 +6,13 @@ paading:0;
 width: 955px;
 margin:0 auto;
 }
-body {
+#header,
+.curves,
+#footer {
 font-family:"Lobster";
+}
+body {
+
 font-size: 18px;
 }
 .wrapper {
@@ -254,6 +259,7 @@ padding: 0px 10px;
 background: url("../img/left2.png") left top repeat-y,
             url("../img/right2.png") right top repeat-y;
 background-color: #f6dbac;
+position:relative;
 }
 
 .lenta {
