@@ -11,15 +11,17 @@ font-family:"Lobster";
 font-size: 18px;
 }
 .wrapper {
-background:url("../img/midcurves.png") repeat-x 50% 650px,
-    url("../img/bg1.jpg") repeat-x center top;
+background:url("../img/midcurves.png") repeat-x 50% bottom,
+    url("../img/bg1.jpg") center top;
 }
 .middle{
 background:linear-gradient(to top,#78442f, #623726);
 padding-top:  45px;
 
 }
-
+.myslider {
+margin-bottom:20px;
+}
 #header {
 background:url("../img/topcurves.png") center top repeat-x;
     
