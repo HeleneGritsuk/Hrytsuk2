@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-
+var Maintext=require('../models/maintext').Maintext;
 /* GET home page. */
 router.get('/:id?', function(req, res, next) {
     if(req.params.id){
@@ -10,7 +10,16 @@ router.get('/:id?', function(req, res, next) {
     var index='Hello';    
     }
     
-  res.render('index', { title: index});
+ Maintext.findOne({url:index},function(err,text){
+ if(!text){
+ text={
+ name:"Добро пожаловать на сайт",
+ body:"Текст"
+ }}
+ 
+ })
+ 
+  res.render('index', { title: text});
 });
 
 module.exports = router;

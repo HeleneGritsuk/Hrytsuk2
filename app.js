@@ -14,7 +14,7 @@ var drop=require('./routes/drop');
 var map=require('./routes/map');
 var storage=require('./routes/storage');
 var config=require('./config');
-
+var add=require('./routes/add');
 var app = express();
 
 // view engine setup
@@ -38,6 +38,7 @@ app.use('/drop',drop);
 app.use('/map',map);
 app.use('/storage',storage);
 app.use('/', routes);
+app.use('/:id/add',add);
 app.use('/:id', routes);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
