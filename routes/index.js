@@ -7,7 +7,7 @@ router.get('/:id?', function(req, res, next) {
     var index=req.params.id;
     }
     else {
-    var index='Hello';    
+    var index='index';    
     }
     
  Maintext.findOne({url:index},function(err,text){
@@ -16,10 +16,11 @@ router.get('/:id?', function(req, res, next) {
  name:"Добро пожаловать на сайт",
  body:"Текст"
  }}
- 
+   res.render('index', { text: text});
+   
  })
  
-  res.render('index', { title: text});
+
 });
 
 module.exports = router;

@@ -1,0 +1,10 @@
+extends layout
+block content
+ section
+  div(style='color:red')=err
+  form(name='login', method='post', id='form', action='/users')
+    label(for='email') e-mail
+    input#email(type='email', name='email')
+    label(for='password') Пароль
+    input#password(type='password', name='password')
+    button( value='Отправить', name='otpravka', id='otpravka') Отправить
